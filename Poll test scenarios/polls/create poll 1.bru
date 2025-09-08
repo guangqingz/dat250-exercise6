@@ -1,0 +1,40 @@
+meta {
+  name: create poll 1
+  type: http
+  seq: 1
+}
+
+post {
+  url: http://localhost:8081/polls/1
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "question": "What’s your favorite color?",
+    "publishedAt": "{{$isoTimestamp}}",
+    "validUntil": "{{oneWeekLater}}",
+    "options": [
+      {"caption": "Red", "presentationOrder": 1 },
+      {"caption": "Blue", "presentationOrder": 2 }
+    ]
+  }
+  
+}
+
+script:pre-request {
+  // ISO 8601 timestamp for now
+  //let now = new Date().toISOString();
+  
+  // one week later
+  let oneWeekLater = new Date(Date.now() + 7 * 24 * 60 * 60 * 1000).toISOString();
+  
+  //bru.setVar("now", now);
+  bru.setVar("oneWeekLater", oneWeekLater);
+  
+}
+
+settings {
+  encodeUrl: true
+}

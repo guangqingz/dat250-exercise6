@@ -1,0 +1,26 @@
+meta {
+  name: user 2 changes vote
+  type: http
+  seq: 3
+}
+
+put {
+  url: http://localhost:8081/votes/1/guang
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "publishedAt": "{{$isoTimestamp}}",
+    "option": {
+      "caption": "Red",
+      "presentationOrder": 1
+    }
+  }
+  
+}
+
+settings {
+  encodeUrl: true
+}
