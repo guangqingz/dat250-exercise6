@@ -9,6 +9,7 @@ import DAT250.exercises.User;
 
 import java.util.Collection;
 
+@CrossOrigin
 @RestController
 @RequestMapping("/users")
 public class UserController {

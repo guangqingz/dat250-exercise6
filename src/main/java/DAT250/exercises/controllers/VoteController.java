@@ -9,6 +9,7 @@ import DAT250.exercises.Vote;
 
 import java.util.*;
 
+@CrossOrigin
 @RestController
 @RequestMapping("/votes")
 public class VoteController {

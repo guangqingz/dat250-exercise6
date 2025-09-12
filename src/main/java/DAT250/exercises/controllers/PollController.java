@@ -10,6 +10,7 @@ import DAT250.exercises.PollManager;
 import java.util.Collection;
 import java.util.UUID;
 
+@CrossOrigin
 @RestController
 @RequestMapping("/polls")
 public class PollController {
