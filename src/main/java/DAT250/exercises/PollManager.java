@@ -7,9 +7,9 @@ import org.springframework.stereotype.Component;
 
 @Component
 public class PollManager {
-    private Map<String, User> users = new HashMap<>();
-    private Map<String, Poll> polls = new HashMap<>();
-    private Map<String, Vote> votes = new HashMap<>();
+    private final Map<String, User> users = new HashMap<>();
+    private final Map<String, Poll> polls = new HashMap<>();
+    private final Map<String, Vote> votes = new HashMap<>();
 
     public Map<String, User> getUsers() {
         return this.users;

@@ -3,8 +3,17 @@ package DAT250.exercises;
 public class VoteOption {
     private String caption;
     private int presentationOrder;
+    private int voteCount;
 
     public VoteOption() {}
+    
+    public int getVoteCount() {
+        return voteCount;
+    }
+
+    public void setVoteCount(int voteCount) {
+        this.voteCount = voteCount;
+    }
 
     public String getCaption() {
         return this.caption;
