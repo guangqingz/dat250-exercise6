@@ -11,5 +11,17 @@ https://github.com/guangqingz/dat250-exercise4/commit/c5f0e6894a38c24294e584cc51
 --- 
 I inspected the database tables in DBeaver and checked if they were set up according to my java classes.
 
+Polls table:
+![Polls table](PollsTable.png)
+
+Users table:
+![Users table](UsersTable.png)
+
+Votes table:
+![Votes table](VotesTable.png)
+
+VoteOptions table:
+![VoteOptions table](VoteOptionsTable.png)
+
 ---
 I don't think there are any remaining issues with this assignment.
