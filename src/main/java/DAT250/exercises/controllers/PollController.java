@@ -15,10 +15,11 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.server.ResponseStatusException;
 
-import DAT250.exercises.Poll;
+
 import DAT250.exercises.PollManager;
-import DAT250.exercises.Vote;
-import DAT250.exercises.VoteOption;
+import DAT250.exercises.jpa.polls.Poll;
+import DAT250.exercises.jpa.polls.Vote;
+import DAT250.exercises.jpa.polls.VoteOption;
 
 @CrossOrigin
 @RestController
@@ -41,7 +42,7 @@ public class PollController {
 
             for (Vote vote : pollManager.getVotes().values()) {
                 for (VoteOption voteOption : poll.getOptions()) {
-                    if (voteOption.getPresentationOrder() == vote.getOption().getPresentationOrder()) {
+                    if (voteOption.getPresentationOrder() == vote.getVotesOn().getPresentationOrder()) {
                         voteOption.setVoteCount(voteOption.getVoteCount() + 1);
                     }
                 }

@@ -14,6 +14,10 @@ import org.springframework.boot.test.web.server.LocalServerPort;
 import org.springframework.web.client.RestClientResponseException;
 import org.springframework.web.client.RestTemplate;
 
+import DAT250.exercises.jpa.polls.Poll;
+import DAT250.exercises.jpa.polls.VoteOption;
+import DAT250.exercises.jpa.polls.Vote;
+
 @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
 public class VoteControllerTest {
 
@@ -61,7 +65,7 @@ public class VoteControllerTest {
 
         vote = new Vote();
         vote.setPublishedAt(Instant.now());
-        vote.setOption(poll.getOptions().get(0));
+        vote.setVotesOn(poll.getOptions().get(0));
 
         client.postForObject(voteBaseUrl() + "/" + pollId + "/bob", vote, Void.class);
     }
@@ -70,19 +74,19 @@ public class VoteControllerTest {
     public void testGetVote() {
         Vote fetched = client.getForObject(voteBaseUrl() + "/" + pollId + "/bob", Vote.class);
         assertNotNull(fetched);
-        assertEquals("Red", fetched.getOption().getCaption());
+        assertEquals("Red", fetched.getVotesOn().getCaption());
     }
 
     @Test
     public void testUpdateVote() {
         Vote updatedVote = new Vote();
         updatedVote.setPublishedAt(Instant.now());
-        updatedVote.setOption(poll.getOptions().get(1));
+        updatedVote.setVotesOn(poll.getOptions().get(1));
 
         client.put(voteBaseUrl() + "/" + pollId + "/bob", updatedVote);
 
         Vote fetched = client.getForObject(voteBaseUrl() + "/" + pollId + "/bob", Vote.class);
-        assertEquals("Blue", fetched.getOption().getCaption());
+        assertEquals("Blue", fetched.getVotesOn().getCaption());
     }
 
     @Test

@@ -1,0 +1,1163 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - PollsTest</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>PollsTest</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/DAT250.exercises.jpa.polls.html">DAT250.exercises.jpa.polls</a> &gt; PollsTest</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">3</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">4.036s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="tab-container">
+<ul class="tabLinks">
+<li>
+<a href="#">Tests</a>
+</li>
+<li>
+<a href="#">Standard output</a>
+</li>
+</ul>
+<div class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">testOptions()</td>
+<td class="success">3.502s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testUsers()</td>
+<td class="success">0.267s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testVotes()</td>
+<td class="success">0.267s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>2025-09-22T22:06:39.540+02:00  INFO 15340 --- [exercises] [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: polls]
+2025-09-22T22:06:39.660+02:00  INFO 15340 --- [exercises] [    Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 7.1.1.Final
+2025-09-22T22:06:40.236+02:00  WARN 15340 --- [exercises] [    Test worker] org.hibernate.orm.connections.pooling    : HHH10001002: Using built-in connection pool (not intended for production use)
+2025-09-22T22:06:40.588+02:00  INFO 15340 --- [exercises] [    Test worker] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:h2:mem:polls]
+	Database driver: H2 JDBC Driver
+	Database dialect: H2Dialect
+	Database version: 2.3.232
+	Default catalog/schema: POLLS/PUBLIC
+	Autocommit mode: false
+	Isolation level: READ_COMMITTED
+	JDBC fetch size: 100
+	Pool: DriverManagerConnectionProviderImpl
+	Minimum pool size: 1
+	Maximum pool size: 20
+2025-09-22T22:06:41.995+02:00  INFO 15340 --- [exercises] [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-09-22T22:06:42.034+02:00 DEBUG 15340 --- [exercises] [    Test worker] org.hibernate.SQL                        : 
+    ?[34mdrop?[0m ?[34mtable?[0m ?[34mif?[0m ?[34mexists?[0m polls ?[34mcascade?[0m 
+?[35m[Hibernate]?[0m 
+    ?[34mdrop?[0m ?[34mtable?[0m ?[34mif?[0m ?[34mexists?[0m polls ?[34mcascade?[0m 
+2025-09-22T22:06:42.038+02:00 DEBUG 15340 --- [exercises] [    Test worker] org.hibernate.SQL                        : 
+    ?[34mdrop?[0m ?[34mtable?[0m ?[34mif?[0m ?[34mexists?[0m users ?[34mcascade?[0m 
+?[35m[Hibernate]?[0m 
+    ?[34mdrop?[0m ?[34mtable?[0m ?[34mif?[0m ?[34mexists?[0m users ?[34mcascade?[0m 
+2025-09-22T22:06:42.039+02:00 DEBUG 15340 --- [exercises] [    Test worker] org.hibernate.SQL                        : 
+    ?[34mdrop?[0m ?[34mtable?[0m ?[34mif?[0m ?[34mexists?[0m vote_options ?[34mcascade?[0m 
+?[35m[Hibernate]?[0m 
+    ?[34mdrop?[0m ?[34mtable?[0m ?[34mif?[0m ?[34mexists?[0m vote_options ?[34mcascade?[0m 
+2025-09-22T22:06:42.040+02:00 DEBUG 15340 --- [exercises] [    Test worker] org.hibernate.SQL                        : 
+    ?[34mdrop?[0m ?[34mtable?[0m ?[34mif?[0m ?[34mexists?[0m votes ?[34mcascade?[0m 
+?[35m[Hibernate]?[0m 
+    ?[34mdrop?[0m ?[34mtable?[0m ?[34mif?[0m ?[34mexists?[0m votes ?[34mcascade?[0m 
+2025-09-22T22:06:42.051+02:00 DEBUG 15340 --- [exercises] [    Test worker] org.hibernate.SQL                        : 
+    ?[34mcreate?[0m ?[34mtable?[0m polls (
+        created_by ?[34mbigint?[0m ?[34mnot?[0m ?[34mnull?[0m,
+        id ?[34mbigint?[0m generated ?[34mby?[0m ?[34mdefault?[0m ?[34mas?[0m ?[34midentity?[0m,
+        publishedAt ?[34mtimestamp?[0m(6) ?[34mwith?[0m ?[34mtime?[0m zone,
+        validUntil ?[34mtimestamp?[0m(6) ?[34mwith?[0m ?[34mtime?[0m zone,
+        question ?[34mvarchar?[0m(255) ?[34mnot?[0m ?[34mnull?[0m,
+        ?[34mprimary?[0m ?[34mkey?[0m (id)
+    )
+?[35m[Hibernate]?[0m 
+    ?[34mcreate?[0m ?[34mtable?[0m polls (
+        created_by ?[34mbigint?[0m ?[34mnot?[0m ?[34mnull?[0m,
+        id ?[34mbigint?[0m generated ?[34mby?[0m ?[34mdefault?[0m ?[34mas?[0m ?[34midentity?[0m,
+        publishedAt ?[34mtimestamp?[0m(6) ?[34mwith?[0m ?[34mtime?[0m zone,
+        validUntil ?[34mtimestamp?[0m(6) ?[34mwith?[0m ?[34mtime?[0m zone,
+        question ?[34mvarchar?[0m(255) ?[34mnot?[0m ?[34mnull?[0m,
+        ?[34mprimary?[0m ?[34mkey?[0m (id)
+    )
+2025-09-22T22:06:42.070+02:00 DEBUG 15340 --- [exercises] [    Test worker] org.hibernate.SQL                        : 
+    ?[34mcreate?[0m ?[34mtable?[0m users (
+        id ?[34mbigint?[0m generated ?[34mby?[0m ?[34mdefault?[0m ?[34mas?[0m ?[34midentity?[0m,
+        email ?[34mvarchar?[0m(255) ?[34mnot?[0m ?[34mnull?[0m ?[34munique?[0m,
+        username ?[34mvarchar?[0m(255) ?[34mnot?[0m ?[34mnull?[0m ?[34munique?[0m,
+        ?[34mprimary?[0m ?[34mkey?[0m (id)
+    )
+?[35m[Hibernate]?[0m 
+    ?[34mcreate?[0m ?[34mtable?[0m users (
+        id ?[34mbigint?[0m generated ?[34mby?[0m ?[34mdefault?[0m ?[34mas?[0m ?[34midentity?[0m,
+        email ?[34mvarchar?[0m(255) ?[34mnot?[0m ?[34mnull?[0m ?[34munique?[0m,
+        username ?[34mvarchar?[0m(255) ?[34mnot?[0m ?[34mnull?[0m ?[34munique?[0m,
+        ?[34mprimary?[0m ?[34mkey?[0m (id)
+    )
+2025-09-22T22:06:42.074+02:00 DEBUG 15340 --- [exercises] [    Test worker] org.hibernate.SQL                        : 
+    ?[34mcreate?[0m ?[34mtable?[0m vote_options (
+        presentationOrder ?[34minteger?[0m ?[34mnot?[0m ?[34mnull?[0m,
+        voteCount ?[34minteger?[0m ?[34mnot?[0m ?[34mnull?[0m,
+        id ?[34mbigint?[0m generated ?[34mby?[0m ?[34mdefault?[0m ?[34mas?[0m ?[34midentity?[0m,
+        poll_id ?[34mbigint?[0m ?[34mnot?[0m ?[34mnull?[0m,
+        caption ?[34mvarchar?[0m(255) ?[34mnot?[0m ?[34mnull?[0m,
+        ?[34mprimary?[0m ?[34mkey?[0m (id)
+    )
+?[35m[Hibernate]?[0m 
+    ?[34mcreate?[0m ?[34mtable?[0m vote_options (
+        presentationOrder ?[34minteger?[0m ?[34mnot?[0m ?[34mnull?[0m,
+        voteCount ?[34minteger?[0m ?[34mnot?[0m ?[34mnull?[0m,
+        id ?[34mbigint?[0m generated ?[34mby?[0m ?[34mdefault?[0m ?[34mas?[0m ?[34midentity?[0m,
+        poll_id ?[34mbigint?[0m ?[34mnot?[0m ?[34mnull?[0m,
+        caption ?[34mvarchar?[0m(255) ?[34mnot?[0m ?[34mnull?[0m,
+        ?[34mprimary?[0m ?[34mkey?[0m (id)
+    )
+2025-09-22T22:06:42.077+02:00 DEBUG 15340 --- [exercises] [    Test worker] org.hibernate.SQL                        : 
+    ?[34mcreate?[0m ?[34mtable?[0m votes (
+        id ?[34mbigint?[0m generated ?[34mby?[0m ?[34mdefault?[0m ?[34mas?[0m ?[34midentity?[0m,
+        option_id ?[34mbigint?[0m ?[34mnot?[0m ?[34mnull?[0m,
+        publishedAt ?[34mtimestamp?[0m(6) ?[34mwith?[0m ?[34mtime?[0m zone ?[34mnot?[0m ?[34mnull?[0m,
+        ?[34mprimary?[0m ?[34mkey?[0m (id)
+    )
+?[35m[Hibernate]?[0m 
+    ?[34mcreate?[0m ?[34mtable?[0m votes (
+        id ?[34mbigint?[0m generated ?[34mby?[0m ?[34mdefault?[0m ?[34mas?[0m ?[34midentity?[0m,
+        option_id ?[34mbigint?[0m ?[34mnot?[0m ?[34mnull?[0m,
+        publishedAt ?[34mtimestamp?[0m(6) ?[34mwith?[0m ?[34mtime?[0m zone ?[34mnot?[0m ?[34mnull?[0m,
+        ?[34mprimary?[0m ?[34mkey?[0m (id)
+    )
+2025-09-22T22:06:42.079+02:00 DEBUG 15340 --- [exercises] [    Test worker] org.hibernate.SQL                        : 
+    ?[34malter?[0m ?[34mtable?[0m ?[34mif?[0m ?[34mexists?[0m polls 
+       ?[34madd?[0m ?[34mconstraint?[0m FKs2iay0nvudl3tl0a33ji0pxyn 
+       ?[34mforeign?[0m ?[34mkey?[0m (created_by) 
+       ?[34mreferences?[0m users
+?[35m[Hibernate]?[0m 
+    ?[34malter?[0m ?[34mtable?[0m ?[34mif?[0m ?[34mexists?[0m polls 
+       ?[34madd?[0m ?[34mconstraint?[0m FKs2iay0nvudl3tl0a33ji0pxyn 
+       ?[34mforeign?[0m ?[34mkey?[0m (created_by) 
+       ?[34mreferences?[0m users
+2025-09-22T22:06:42.102+02:00 DEBUG 15340 --- [exercises] [    Test worker] org.hibernate.SQL                        : 
+    ?[34malter?[0m ?[34mtable?[0m ?[34mif?[0m ?[34mexists?[0m vote_options 
+       ?[34madd?[0m ?[34mconstraint?[0m FK56hcvg8yyift6bfeek4yvi2vt 
+       ?[34mforeign?[0m ?[34mkey?[0m (poll_id) 
+       ?[34mreferences?[0m polls
+?[35m[Hibernate]?[0m 
+    ?[34malter?[0m ?[34mtable?[0m ?[34mif?[0m ?[34mexists?[0m vote_options 
+       ?[34madd?[0m ?[34mconstraint?[0m FK56hcvg8yyift6bfeek4yvi2vt 
+       ?[34mforeign?[0m ?[34mkey?[0m (poll_id) 
+       ?[34mreferences?[0m polls
+2025-09-22T22:06:42.104+02:00 DEBUG 15340 --- [exercises] [    Test worker] org.hibernate.SQL                        : 
+    ?[34malter?[0m ?[34mtable?[0m ?[34mif?[0m ?[34mexists?[0m votes 
+       ?[34madd?[0m ?[34mconstraint?[0m FKce7opojrsdpq1rkbvd4vj2qs5 
+       ?[34mforeign?[0m ?[34mkey?[0m (option_id) 
+       ?[34mreferences?[0m vote_options
+?[35m[Hibernate]?[0m 
+    ?[34malter?[0m ?[34mtable?[0m ?[34mif?[0m ?[34mexists?[0m votes 
+       ?[34madd?[0m ?[34mconstraint?[0m FKce7opojrsdpq1rkbvd4vj2qs5 
+       ?[34mforeign?[0m ?[34mkey?[0m (option_id) 
+       ?[34mreferences?[0m vote_options
+2025-09-22T22:06:42.212+02:00 DEBUG 15340 --- [exercises] [    Test worker] org.hibernate.SQL                        : 
+    ?[34minsert?[0m 
+    ?[34minto?[0m
+        users
+        (email, username, id) 
+    ?[34mvalues?[0m
+        (?, ?, ?[34mdefault?[0m)
+?[35m[Hibernate]?[0m 
+    ?[34minsert?[0m 
+    ?[34minto?[0m
+        users
+        (email, username, id) 
+    ?[34mvalues?[0m
+        (?, ?, ?[34mdefault?[0m)
+2025-09-22T22:06:42.270+02:00 DEBUG 15340 --- [exercises] [    Test worker] org.hibernate.SQL                        : 
+    ?[34minsert?[0m 
+    ?[34minto?[0m
+        users
+        (email, username, id) 
+    ?[34mvalues?[0m
+        (?, ?, ?[34mdefault?[0m)
+?[35m[Hibernate]?[0m 
+    ?[34minsert?[0m 
+    ?[34minto?[0m
+        users
+        (email, username, id) 
+    ?[34mvalues?[0m
+        (?, ?, ?[34mdefault?[0m)
+2025-09-22T22:06:42.271+02:00 DEBUG 15340 --- [exercises] [    Test worker] org.hibernate.SQL                        : 
+    ?[34minsert?[0m 
+    ?[34minto?[0m
+        users
+        (email, username, id) 
+    ?[34mvalues?[0m
+        (?, ?, ?[34mdefault?[0m)
+?[35m[Hibernate]?[0m 
+    ?[34minsert?[0m 
+    ?[34minto?[0m
+        users
+        (email, username, id) 
+    ?[34mvalues?[0m
+        (?, ?, ?[34mdefault?[0m)
+2025-09-22T22:06:42.276+02:00 DEBUG 15340 --- [exercises] [    Test worker] org.hibernate.SQL                        : 
+    ?[34minsert?[0m 
+    ?[34minto?[0m
+        polls
+        (created_by, publishedAt, question, validUntil, id) 
+    ?[34mvalues?[0m
+        (?, ?, ?, ?, ?[34mdefault?[0m)
+?[35m[Hibernate]?[0m 
+    ?[34minsert?[0m 
+    ?[34minto?[0m
+        polls
+        (created_by, publishedAt, question, validUntil, id) 
+    ?[34mvalues?[0m
+        (?, ?, ?, ?, ?[34mdefault?[0m)
+2025-09-22T22:06:42.279+02:00 DEBUG 15340 --- [exercises] [    Test worker] org.hibernate.SQL                        : 
+    ?[34minsert?[0m 
+    ?[34minto?[0m
+        vote_options
+        (caption, poll_id, presentationOrder, voteCount, id) 
+    ?[34mvalues?[0m
+        (?, ?, ?, ?, ?[34mdefault?[0m)
+?[35m[Hibernate]?[0m 
+    ?[34minsert?[0m 
+    ?[34minto?[0m
+        vote_options
+        (caption, poll_id, presentationOrder, voteCount, id) 
+    ?[34mvalues?[0m
+        (?, ?, ?, ?, ?[34mdefault?[0m)
+2025-09-22T22:06:42.281+02:00 DEBUG 15340 --- [exercises] [    Test worker] org.hibernate.SQL                        : 
+    ?[34minsert?[0m 
+    ?[34minto?[0m
+        vote_options
+        (caption, poll_id, presentationOrder, voteCount, id) 
+    ?[34mvalues?[0m
+        (?, ?, ?, ?, ?[34mdefault?[0m)
+?[35m[Hibernate]?[0m 
+    ?[34minsert?[0m 
+    ?[34minto?[0m
+        vote_options
+        (caption, poll_id, presentationOrder, voteCount, id) 
+    ?[34mvalues?[0m
+        (?, ?, ?, ?, ?[34mdefault?[0m)
+2025-09-22T22:06:42.283+02:00 DEBUG 15340 --- [exercises] [    Test worker] org.hibernate.SQL                        : 
+    ?[34minsert?[0m 
+    ?[34minto?[0m
+        polls
+        (created_by, publishedAt, question, validUntil, id) 
+    ?[34mvalues?[0m
+        (?, ?, ?, ?, ?[34mdefault?[0m)
+?[35m[Hibernate]?[0m 
+    ?[34minsert?[0m 
+    ?[34minto?[0m
+        polls
+        (created_by, publishedAt, question, validUntil, id) 
+    ?[34mvalues?[0m
+        (?, ?, ?, ?, ?[34mdefault?[0m)
+2025-09-22T22:06:42.284+02:00 DEBUG 15340 --- [exercises] [    Test worker] org.hibernate.SQL                        : 
+    ?[34minsert?[0m 
+    ?[34minto?[0m
+        vote_options
+        (caption, poll_id, presentationOrder, voteCount, id) 
+    ?[34mvalues?[0m
+        (?, ?, ?, ?, ?[34mdefault?[0m)
+?[35m[Hibernate]?[0m 
+    ?[34minsert?[0m 
+    ?[34minto?[0m
+        vote_options
+        (caption, poll_id, presentationOrder, voteCount, id) 
+    ?[34mvalues?[0m
+        (?, ?, ?, ?, ?[34mdefault?[0m)
+2025-09-22T22:06:42.286+02:00 DEBUG 15340 --- [exercises] [    Test worker] org.hibernate.SQL                        : 
+    ?[34minsert?[0m 
+    ?[34minto?[0m
+        vote_options
+        (caption, poll_id, presentationOrder, voteCount, id) 
+    ?[34mvalues?[0m
+        (?, ?, ?, ?, ?[34mdefault?[0m)
+?[35m[Hibernate]?[0m 
+    ?[34minsert?[0m 
+    ?[34minto?[0m
+        vote_options
+        (caption, poll_id, presentationOrder, voteCount, id) 
+    ?[34mvalues?[0m
+        (?, ?, ?, ?, ?[34mdefault?[0m)
+2025-09-22T22:06:42.287+02:00 DEBUG 15340 --- [exercises] [    Test worker] org.hibernate.SQL                        : 
+    ?[34minsert?[0m 
+    ?[34minto?[0m
+        votes
+        (publishedAt, option_id, id) 
+    ?[34mvalues?[0m
+        (?, ?, ?[34mdefault?[0m)
+?[35m[Hibernate]?[0m 
+    ?[34minsert?[0m 
+    ?[34minto?[0m
+        votes
+        (publishedAt, option_id, id) 
+    ?[34mvalues?[0m
+        (?, ?, ?[34mdefault?[0m)
+2025-09-22T22:06:42.296+02:00 DEBUG 15340 --- [exercises] [    Test worker] org.hibernate.SQL                        : 
+    ?[34minsert?[0m 
+    ?[34minto?[0m
+        votes
+        (publishedAt, option_id, id) 
+    ?[34mvalues?[0m
+        (?, ?, ?[34mdefault?[0m)
+?[35m[Hibernate]?[0m 
+    ?[34minsert?[0m 
+    ?[34minto?[0m
+        votes
+        (publishedAt, option_id, id) 
+    ?[34mvalues?[0m
+        (?, ?, ?[34mdefault?[0m)
+2025-09-22T22:06:42.297+02:00 DEBUG 15340 --- [exercises] [    Test worker] org.hibernate.SQL                        : 
+    ?[34minsert?[0m 
+    ?[34minto?[0m
+        votes
+        (publishedAt, option_id, id) 
+    ?[34mvalues?[0m
+        (?, ?, ?[34mdefault?[0m)
+?[35m[Hibernate]?[0m 
+    ?[34minsert?[0m 
+    ?[34minto?[0m
+        votes
+        (publishedAt, option_id, id) 
+    ?[34mvalues?[0m
+        (?, ?, ?[34mdefault?[0m)
+2025-09-22T22:06:42.299+02:00 DEBUG 15340 --- [exercises] [    Test worker] org.hibernate.SQL                        : 
+    ?[34minsert?[0m 
+    ?[34minto?[0m
+        votes
+        (publishedAt, option_id, id) 
+    ?[34mvalues?[0m
+        (?, ?, ?[34mdefault?[0m)
+?[35m[Hibernate]?[0m 
+    ?[34minsert?[0m 
+    ?[34minto?[0m
+        votes
+        (publishedAt, option_id, id) 
+    ?[34mvalues?[0m
+        (?, ?, ?[34mdefault?[0m)
+2025-09-22T22:06:42.991+02:00 DEBUG 15340 --- [exercises] [    Test worker] org.hibernate.SQL                        : 
+    ?[34mselect?[0m
+        o1_0.caption 
+    ?[34mfrom?[0m
+        polls p1_0 
+    ?[34mjoin?[0m
+        vote_options o1_0 
+            ?[34mon?[0m p1_0.id=o1_0.poll_id 
+    ?[34mjoin?[0m
+        users cb1_0 
+            ?[34mon?[0m cb1_0.id=p1_0.created_by 
+    ?[34mwhere?[0m
+        cb1_0.email=? 
+    ?[34morder?[0m ?[34mby?[0m
+        o1_0.presentationOrder
+?[35m[Hibernate]?[0m 
+    ?[34mselect?[0m
+        o1_0.caption 
+    ?[34mfrom?[0m
+        polls p1_0 
+    ?[34mjoin?[0m
+        vote_options o1_0 
+            ?[34mon?[0m p1_0.id=o1_0.poll_id 
+    ?[34mjoin?[0m
+        users cb1_0 
+            ?[34mon?[0m cb1_0.id=p1_0.created_by 
+    ?[34mwhere?[0m
+        cb1_0.email=? 
+    ?[34morder?[0m ?[34mby?[0m
+        o1_0.presentationOrder
+2025-09-22T22:06:43.002+02:00  INFO 15340 --- [exercises] [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: polls]
+2025-09-22T22:06:43.033+02:00  WARN 15340 --- [exercises] [    Test worker] org.hibernate.orm.connections.pooling    : HHH10001002: Using built-in connection pool (not intended for production use)
+2025-09-22T22:06:43.035+02:00  INFO 15340 --- [exercises] [    Test worker] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:h2:mem:polls]
+	Database driver: H2 JDBC Driver
+	Database dialect: H2Dialect
+	Database version: 2.3.232
+	Default catalog/schema: POLLS/PUBLIC
+	Autocommit mode: false
+	Isolation level: READ_COMMITTED
+	JDBC fetch size: 100
+	Pool: DriverManagerConnectionProviderImpl
+	Minimum pool size: 1
+	Maximum pool size: 20
+2025-09-22T22:06:43.120+02:00  INFO 15340 --- [exercises] [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-09-22T22:06:43.122+02:00 DEBUG 15340 --- [exercises] [    Test worker] org.hibernate.SQL                        : 
+    ?[34mdrop?[0m ?[34mtable?[0m ?[34mif?[0m ?[34mexists?[0m polls ?[34mcascade?[0m 
+?[35m[Hibernate]?[0m 
+    ?[34mdrop?[0m ?[34mtable?[0m ?[34mif?[0m ?[34mexists?[0m polls ?[34mcascade?[0m 
+2025-09-22T22:06:43.126+02:00 DEBUG 15340 --- [exercises] [    Test worker] org.hibernate.SQL                        : 
+    ?[34mdrop?[0m ?[34mtable?[0m ?[34mif?[0m ?[34mexists?[0m users ?[34mcascade?[0m 
+?[35m[Hibernate]?[0m 
+    ?[34mdrop?[0m ?[34mtable?[0m ?[34mif?[0m ?[34mexists?[0m users ?[34mcascade?[0m 
+2025-09-22T22:06:43.128+02:00 DEBUG 15340 --- [exercises] [    Test worker] org.hibernate.SQL                        : 
+    ?[34mdrop?[0m ?[34mtable?[0m ?[34mif?[0m ?[34mexists?[0m vote_options ?[34mcascade?[0m 
+?[35m[Hibernate]?[0m 
+    ?[34mdrop?[0m ?[34mtable?[0m ?[34mif?[0m ?[34mexists?[0m vote_options ?[34mcascade?[0m 
+2025-09-22T22:06:43.129+02:00 DEBUG 15340 --- [exercises] [    Test worker] org.hibernate.SQL                        : 
+    ?[34mdrop?[0m ?[34mtable?[0m ?[34mif?[0m ?[34mexists?[0m votes ?[34mcascade?[0m 
+?[35m[Hibernate]?[0m 
+    ?[34mdrop?[0m ?[34mtable?[0m ?[34mif?[0m ?[34mexists?[0m votes ?[34mcascade?[0m 
+2025-09-22T22:06:43.131+02:00 DEBUG 15340 --- [exercises] [    Test worker] org.hibernate.SQL                        : 
+    ?[34mcreate?[0m ?[34mtable?[0m polls (
+        created_by ?[34mbigint?[0m ?[34mnot?[0m ?[34mnull?[0m,
+        id ?[34mbigint?[0m generated ?[34mby?[0m ?[34mdefault?[0m ?[34mas?[0m ?[34midentity?[0m,
+        publishedAt ?[34mtimestamp?[0m(6) ?[34mwith?[0m ?[34mtime?[0m zone,
+        validUntil ?[34mtimestamp?[0m(6) ?[34mwith?[0m ?[34mtime?[0m zone,
+        question ?[34mvarchar?[0m(255) ?[34mnot?[0m ?[34mnull?[0m,
+        ?[34mprimary?[0m ?[34mkey?[0m (id)
+    )
+?[35m[Hibernate]?[0m 
+    ?[34mcreate?[0m ?[34mtable?[0m polls (
+        created_by ?[34mbigint?[0m ?[34mnot?[0m ?[34mnull?[0m,
+        id ?[34mbigint?[0m generated ?[34mby?[0m ?[34mdefault?[0m ?[34mas?[0m ?[34midentity?[0m,
+        publishedAt ?[34mtimestamp?[0m(6) ?[34mwith?[0m ?[34mtime?[0m zone,
+        validUntil ?[34mtimestamp?[0m(6) ?[34mwith?[0m ?[34mtime?[0m zone,
+        question ?[34mvarchar?[0m(255) ?[34mnot?[0m ?[34mnull?[0m,
+        ?[34mprimary?[0m ?[34mkey?[0m (id)
+    )
+2025-09-22T22:06:43.133+02:00 DEBUG 15340 --- [exercises] [    Test worker] org.hibernate.SQL                        : 
+    ?[34mcreate?[0m ?[34mtable?[0m users (
+        id ?[34mbigint?[0m generated ?[34mby?[0m ?[34mdefault?[0m ?[34mas?[0m ?[34midentity?[0m,
+        email ?[34mvarchar?[0m(255) ?[34mnot?[0m ?[34mnull?[0m ?[34munique?[0m,
+        username ?[34mvarchar?[0m(255) ?[34mnot?[0m ?[34mnull?[0m ?[34munique?[0m,
+        ?[34mprimary?[0m ?[34mkey?[0m (id)
+    )
+?[35m[Hibernate]?[0m 
+    ?[34mcreate?[0m ?[34mtable?[0m users (
+        id ?[34mbigint?[0m generated ?[34mby?[0m ?[34mdefault?[0m ?[34mas?[0m ?[34midentity?[0m,
+        email ?[34mvarchar?[0m(255) ?[34mnot?[0m ?[34mnull?[0m ?[34munique?[0m,
+        username ?[34mvarchar?[0m(255) ?[34mnot?[0m ?[34mnull?[0m ?[34munique?[0m,
+        ?[34mprimary?[0m ?[34mkey?[0m (id)
+    )
+2025-09-22T22:06:43.136+02:00 DEBUG 15340 --- [exercises] [    Test worker] org.hibernate.SQL                        : 
+    ?[34mcreate?[0m ?[34mtable?[0m vote_options (
+        presentationOrder ?[34minteger?[0m ?[34mnot?[0m ?[34mnull?[0m,
+        voteCount ?[34minteger?[0m ?[34mnot?[0m ?[34mnull?[0m,
+        id ?[34mbigint?[0m generated ?[34mby?[0m ?[34mdefault?[0m ?[34mas?[0m ?[34midentity?[0m,
+        poll_id ?[34mbigint?[0m ?[34mnot?[0m ?[34mnull?[0m,
+        caption ?[34mvarchar?[0m(255) ?[34mnot?[0m ?[34mnull?[0m,
+        ?[34mprimary?[0m ?[34mkey?[0m (id)
+    )
+?[35m[Hibernate]?[0m 
+    ?[34mcreate?[0m ?[34mtable?[0m vote_options (
+        presentationOrder ?[34minteger?[0m ?[34mnot?[0m ?[34mnull?[0m,
+        voteCount ?[34minteger?[0m ?[34mnot?[0m ?[34mnull?[0m,
+        id ?[34mbigint?[0m generated ?[34mby?[0m ?[34mdefault?[0m ?[34mas?[0m ?[34midentity?[0m,
+        poll_id ?[34mbigint?[0m ?[34mnot?[0m ?[34mnull?[0m,
+        caption ?[34mvarchar?[0m(255) ?[34mnot?[0m ?[34mnull?[0m,
+        ?[34mprimary?[0m ?[34mkey?[0m (id)
+    )
+2025-09-22T22:06:43.137+02:00 DEBUG 15340 --- [exercises] [    Test worker] org.hibernate.SQL                        : 
+    ?[34mcreate?[0m ?[34mtable?[0m votes (
+        id ?[34mbigint?[0m generated ?[34mby?[0m ?[34mdefault?[0m ?[34mas?[0m ?[34midentity?[0m,
+        option_id ?[34mbigint?[0m ?[34mnot?[0m ?[34mnull?[0m,
+        publishedAt ?[34mtimestamp?[0m(6) ?[34mwith?[0m ?[34mtime?[0m zone ?[34mnot?[0m ?[34mnull?[0m,
+        ?[34mprimary?[0m ?[34mkey?[0m (id)
+    )
+?[35m[Hibernate]?[0m 
+    ?[34mcreate?[0m ?[34mtable?[0m votes (
+        id ?[34mbigint?[0m generated ?[34mby?[0m ?[34mdefault?[0m ?[34mas?[0m ?[34midentity?[0m,
+        option_id ?[34mbigint?[0m ?[34mnot?[0m ?[34mnull?[0m,
+        publishedAt ?[34mtimestamp?[0m(6) ?[34mwith?[0m ?[34mtime?[0m zone ?[34mnot?[0m ?[34mnull?[0m,
+        ?[34mprimary?[0m ?[34mkey?[0m (id)
+    )
+2025-09-22T22:06:43.139+02:00 DEBUG 15340 --- [exercises] [    Test worker] org.hibernate.SQL                        : 
+    ?[34malter?[0m ?[34mtable?[0m ?[34mif?[0m ?[34mexists?[0m polls 
+       ?[34madd?[0m ?[34mconstraint?[0m FKs2iay0nvudl3tl0a33ji0pxyn 
+       ?[34mforeign?[0m ?[34mkey?[0m (created_by) 
+       ?[34mreferences?[0m users
+?[35m[Hibernate]?[0m 
+    ?[34malter?[0m ?[34mtable?[0m ?[34mif?[0m ?[34mexists?[0m polls 
+       ?[34madd?[0m ?[34mconstraint?[0m FKs2iay0nvudl3tl0a33ji0pxyn 
+       ?[34mforeign?[0m ?[34mkey?[0m (created_by) 
+       ?[34mreferences?[0m users
+2025-09-22T22:06:43.141+02:00 DEBUG 15340 --- [exercises] [    Test worker] org.hibernate.SQL                        : 
+    ?[34malter?[0m ?[34mtable?[0m ?[34mif?[0m ?[34mexists?[0m vote_options 
+       ?[34madd?[0m ?[34mconstraint?[0m FK56hcvg8yyift6bfeek4yvi2vt 
+       ?[34mforeign?[0m ?[34mkey?[0m (poll_id) 
+       ?[34mreferences?[0m polls
+?[35m[Hibernate]?[0m 
+    ?[34malter?[0m ?[34mtable?[0m ?[34mif?[0m ?[34mexists?[0m vote_options 
+       ?[34madd?[0m ?[34mconstraint?[0m FK56hcvg8yyift6bfeek4yvi2vt 
+       ?[34mforeign?[0m ?[34mkey?[0m (poll_id) 
+       ?[34mreferences?[0m polls
+2025-09-22T22:06:43.143+02:00 DEBUG 15340 --- [exercises] [    Test worker] org.hibernate.SQL                        : 
+    ?[34malter?[0m ?[34mtable?[0m ?[34mif?[0m ?[34mexists?[0m votes 
+       ?[34madd?[0m ?[34mconstraint?[0m FKce7opojrsdpq1rkbvd4vj2qs5 
+       ?[34mforeign?[0m ?[34mkey?[0m (option_id) 
+       ?[34mreferences?[0m vote_options
+?[35m[Hibernate]?[0m 
+    ?[34malter?[0m ?[34mtable?[0m ?[34mif?[0m ?[34mexists?[0m votes 
+       ?[34madd?[0m ?[34mconstraint?[0m FKce7opojrsdpq1rkbvd4vj2qs5 
+       ?[34mforeign?[0m ?[34mkey?[0m (option_id) 
+       ?[34mreferences?[0m vote_options
+2025-09-22T22:06:43.147+02:00 DEBUG 15340 --- [exercises] [    Test worker] org.hibernate.SQL                        : 
+    ?[34minsert?[0m 
+    ?[34minto?[0m
+        users
+        (email, username, id) 
+    ?[34mvalues?[0m
+        (?, ?, ?[34mdefault?[0m)
+?[35m[Hibernate]?[0m 
+    ?[34minsert?[0m 
+    ?[34minto?[0m
+        users
+        (email, username, id) 
+    ?[34mvalues?[0m
+        (?, ?, ?[34mdefault?[0m)
+2025-09-22T22:06:43.150+02:00 DEBUG 15340 --- [exercises] [    Test worker] org.hibernate.SQL                        : 
+    ?[34minsert?[0m 
+    ?[34minto?[0m
+        users
+        (email, username, id) 
+    ?[34mvalues?[0m
+        (?, ?, ?[34mdefault?[0m)
+?[35m[Hibernate]?[0m 
+    ?[34minsert?[0m 
+    ?[34minto?[0m
+        users
+        (email, username, id) 
+    ?[34mvalues?[0m
+        (?, ?, ?[34mdefault?[0m)
+2025-09-22T22:06:43.152+02:00 DEBUG 15340 --- [exercises] [    Test worker] org.hibernate.SQL                        : 
+    ?[34minsert?[0m 
+    ?[34minto?[0m
+        users
+        (email, username, id) 
+    ?[34mvalues?[0m
+        (?, ?, ?[34mdefault?[0m)
+?[35m[Hibernate]?[0m 
+    ?[34minsert?[0m 
+    ?[34minto?[0m
+        users
+        (email, username, id) 
+    ?[34mvalues?[0m
+        (?, ?, ?[34mdefault?[0m)
+2025-09-22T22:06:43.154+02:00 DEBUG 15340 --- [exercises] [    Test worker] org.hibernate.SQL                        : 
+    ?[34minsert?[0m 
+    ?[34minto?[0m
+        polls
+        (created_by, publishedAt, question, validUntil, id) 
+    ?[34mvalues?[0m
+        (?, ?, ?, ?, ?[34mdefault?[0m)
+?[35m[Hibernate]?[0m 
+    ?[34minsert?[0m 
+    ?[34minto?[0m
+        polls
+        (created_by, publishedAt, question, validUntil, id) 
+    ?[34mvalues?[0m
+        (?, ?, ?, ?, ?[34mdefault?[0m)
+2025-09-22T22:06:43.157+02:00 DEBUG 15340 --- [exercises] [    Test worker] org.hibernate.SQL                        : 
+    ?[34minsert?[0m 
+    ?[34minto?[0m
+        vote_options
+        (caption, poll_id, presentationOrder, voteCount, id) 
+    ?[34mvalues?[0m
+        (?, ?, ?, ?, ?[34mdefault?[0m)
+?[35m[Hibernate]?[0m 
+    ?[34minsert?[0m 
+    ?[34minto?[0m
+        vote_options
+        (caption, poll_id, presentationOrder, voteCount, id) 
+    ?[34mvalues?[0m
+        (?, ?, ?, ?, ?[34mdefault?[0m)
+2025-09-22T22:06:43.159+02:00 DEBUG 15340 --- [exercises] [    Test worker] org.hibernate.SQL                        : 
+    ?[34minsert?[0m 
+    ?[34minto?[0m
+        vote_options
+        (caption, poll_id, presentationOrder, voteCount, id) 
+    ?[34mvalues?[0m
+        (?, ?, ?, ?, ?[34mdefault?[0m)
+?[35m[Hibernate]?[0m 
+    ?[34minsert?[0m 
+    ?[34minto?[0m
+        vote_options
+        (caption, poll_id, presentationOrder, voteCount, id) 
+    ?[34mvalues?[0m
+        (?, ?, ?, ?, ?[34mdefault?[0m)
+2025-09-22T22:06:43.161+02:00 DEBUG 15340 --- [exercises] [    Test worker] org.hibernate.SQL                        : 
+    ?[34minsert?[0m 
+    ?[34minto?[0m
+        polls
+        (created_by, publishedAt, question, validUntil, id) 
+    ?[34mvalues?[0m
+        (?, ?, ?, ?, ?[34mdefault?[0m)
+?[35m[Hibernate]?[0m 
+    ?[34minsert?[0m 
+    ?[34minto?[0m
+        polls
+        (created_by, publishedAt, question, validUntil, id) 
+    ?[34mvalues?[0m
+        (?, ?, ?, ?, ?[34mdefault?[0m)
+2025-09-22T22:06:43.162+02:00 DEBUG 15340 --- [exercises] [    Test worker] org.hibernate.SQL                        : 
+    ?[34minsert?[0m 
+    ?[34minto?[0m
+        vote_options
+        (caption, poll_id, presentationOrder, voteCount, id) 
+    ?[34mvalues?[0m
+        (?, ?, ?, ?, ?[34mdefault?[0m)
+?[35m[Hibernate]?[0m 
+    ?[34minsert?[0m 
+    ?[34minto?[0m
+        vote_options
+        (caption, poll_id, presentationOrder, voteCount, id) 
+    ?[34mvalues?[0m
+        (?, ?, ?, ?, ?[34mdefault?[0m)
+2025-09-22T22:06:43.164+02:00 DEBUG 15340 --- [exercises] [    Test worker] org.hibernate.SQL                        : 
+    ?[34minsert?[0m 
+    ?[34minto?[0m
+        vote_options
+        (caption, poll_id, presentationOrder, voteCount, id) 
+    ?[34mvalues?[0m
+        (?, ?, ?, ?, ?[34mdefault?[0m)
+?[35m[Hibernate]?[0m 
+    ?[34minsert?[0m 
+    ?[34minto?[0m
+        vote_options
+        (caption, poll_id, presentationOrder, voteCount, id) 
+    ?[34mvalues?[0m
+        (?, ?, ?, ?, ?[34mdefault?[0m)
+2025-09-22T22:06:43.165+02:00 DEBUG 15340 --- [exercises] [    Test worker] org.hibernate.SQL                        : 
+    ?[34minsert?[0m 
+    ?[34minto?[0m
+        votes
+        (publishedAt, option_id, id) 
+    ?[34mvalues?[0m
+        (?, ?, ?[34mdefault?[0m)
+?[35m[Hibernate]?[0m 
+    ?[34minsert?[0m 
+    ?[34minto?[0m
+        votes
+        (publishedAt, option_id, id) 
+    ?[34mvalues?[0m
+        (?, ?, ?[34mdefault?[0m)
+2025-09-22T22:06:43.167+02:00 DEBUG 15340 --- [exercises] [    Test worker] org.hibernate.SQL                        : 
+    ?[34minsert?[0m 
+    ?[34minto?[0m
+        votes
+        (publishedAt, option_id, id) 
+    ?[34mvalues?[0m
+        (?, ?, ?[34mdefault?[0m)
+?[35m[Hibernate]?[0m 
+    ?[34minsert?[0m 
+    ?[34minto?[0m
+        votes
+        (publishedAt, option_id, id) 
+    ?[34mvalues?[0m
+        (?, ?, ?[34mdefault?[0m)
+2025-09-22T22:06:43.168+02:00 DEBUG 15340 --- [exercises] [    Test worker] org.hibernate.SQL                        : 
+    ?[34minsert?[0m 
+    ?[34minto?[0m
+        votes
+        (publishedAt, option_id, id) 
+    ?[34mvalues?[0m
+        (?, ?, ?[34mdefault?[0m)
+?[35m[Hibernate]?[0m 
+    ?[34minsert?[0m 
+    ?[34minto?[0m
+        votes
+        (publishedAt, option_id, id) 
+    ?[34mvalues?[0m
+        (?, ?, ?[34mdefault?[0m)
+2025-09-22T22:06:43.170+02:00 DEBUG 15340 --- [exercises] [    Test worker] org.hibernate.SQL                        : 
+    ?[34minsert?[0m 
+    ?[34minto?[0m
+        votes
+        (publishedAt, option_id, id) 
+    ?[34mvalues?[0m
+        (?, ?, ?[34mdefault?[0m)
+?[35m[Hibernate]?[0m 
+    ?[34minsert?[0m 
+    ?[34minto?[0m
+        votes
+        (publishedAt, option_id, id) 
+    ?[34mvalues?[0m
+        (?, ?, ?[34mdefault?[0m)
+2025-09-22T22:06:43.204+02:00 DEBUG 15340 --- [exercises] [    Test worker] org.hibernate.SQL                        : 
+    ?[34mselect?[0m
+        count(id) 
+    ?[34mfrom?[0m
+        users
+?[35m[Hibernate]?[0m 
+    ?[34mselect?[0m
+        count(id) 
+    ?[34mfrom?[0m
+        users
+2025-09-22T22:06:43.240+02:00 DEBUG 15340 --- [exercises] [    Test worker] org.hibernate.SQL                        : 
+    ?[34mselect?[0m
+        u1_0.id,
+        u1_0.email,
+        u1_0.username 
+    ?[34mfrom?[0m
+        users u1_0 
+    ?[34mwhere?[0m
+        u1_0.username ?[34mlike?[0m ?[36m'bob'?[0m ?[34mescape?[0m ?[36m''?[0m
+?[35m[Hibernate]?[0m 
+    ?[34mselect?[0m
+        u1_0.id,
+        u1_0.email,
+        u1_0.username 
+    ?[34mfrom?[0m
+        users u1_0 
+    ?[34mwhere?[0m
+        u1_0.username ?[34mlike?[0m ?[36m'bob'?[0m ?[34mescape?[0m ?[36m''?[0m
+2025-09-22T22:06:43.270+02:00  INFO 15340 --- [exercises] [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: polls]
+2025-09-22T22:06:43.302+02:00  WARN 15340 --- [exercises] [    Test worker] org.hibernate.orm.connections.pooling    : HHH10001002: Using built-in connection pool (not intended for production use)
+2025-09-22T22:06:43.304+02:00  INFO 15340 --- [exercises] [    Test worker] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:h2:mem:polls]
+	Database driver: H2 JDBC Driver
+	Database dialect: H2Dialect
+	Database version: 2.3.232
+	Default catalog/schema: POLLS/PUBLIC
+	Autocommit mode: false
+	Isolation level: READ_COMMITTED
+	JDBC fetch size: 100
+	Pool: DriverManagerConnectionProviderImpl
+	Minimum pool size: 1
+	Maximum pool size: 20
+2025-09-22T22:06:43.366+02:00  INFO 15340 --- [exercises] [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-09-22T22:06:43.368+02:00 DEBUG 15340 --- [exercises] [    Test worker] org.hibernate.SQL                        : 
+    ?[34mdrop?[0m ?[34mtable?[0m ?[34mif?[0m ?[34mexists?[0m polls ?[34mcascade?[0m 
+?[35m[Hibernate]?[0m 
+    ?[34mdrop?[0m ?[34mtable?[0m ?[34mif?[0m ?[34mexists?[0m polls ?[34mcascade?[0m 
+2025-09-22T22:06:43.370+02:00 DEBUG 15340 --- [exercises] [    Test worker] org.hibernate.SQL                        : 
+    ?[34mdrop?[0m ?[34mtable?[0m ?[34mif?[0m ?[34mexists?[0m users ?[34mcascade?[0m 
+?[35m[Hibernate]?[0m 
+    ?[34mdrop?[0m ?[34mtable?[0m ?[34mif?[0m ?[34mexists?[0m users ?[34mcascade?[0m 
+2025-09-22T22:06:43.372+02:00 DEBUG 15340 --- [exercises] [    Test worker] org.hibernate.SQL                        : 
+    ?[34mdrop?[0m ?[34mtable?[0m ?[34mif?[0m ?[34mexists?[0m vote_options ?[34mcascade?[0m 
+?[35m[Hibernate]?[0m 
+    ?[34mdrop?[0m ?[34mtable?[0m ?[34mif?[0m ?[34mexists?[0m vote_options ?[34mcascade?[0m 
+2025-09-22T22:06:43.373+02:00 DEBUG 15340 --- [exercises] [    Test worker] org.hibernate.SQL                        : 
+    ?[34mdrop?[0m ?[34mtable?[0m ?[34mif?[0m ?[34mexists?[0m votes ?[34mcascade?[0m 
+?[35m[Hibernate]?[0m 
+    ?[34mdrop?[0m ?[34mtable?[0m ?[34mif?[0m ?[34mexists?[0m votes ?[34mcascade?[0m 
+2025-09-22T22:06:43.374+02:00 DEBUG 15340 --- [exercises] [    Test worker] org.hibernate.SQL                        : 
+    ?[34mcreate?[0m ?[34mtable?[0m polls (
+        created_by ?[34mbigint?[0m ?[34mnot?[0m ?[34mnull?[0m,
+        id ?[34mbigint?[0m generated ?[34mby?[0m ?[34mdefault?[0m ?[34mas?[0m ?[34midentity?[0m,
+        publishedAt ?[34mtimestamp?[0m(6) ?[34mwith?[0m ?[34mtime?[0m zone,
+        validUntil ?[34mtimestamp?[0m(6) ?[34mwith?[0m ?[34mtime?[0m zone,
+        question ?[34mvarchar?[0m(255) ?[34mnot?[0m ?[34mnull?[0m,
+        ?[34mprimary?[0m ?[34mkey?[0m (id)
+    )
+?[35m[Hibernate]?[0m 
+    ?[34mcreate?[0m ?[34mtable?[0m polls (
+        created_by ?[34mbigint?[0m ?[34mnot?[0m ?[34mnull?[0m,
+        id ?[34mbigint?[0m generated ?[34mby?[0m ?[34mdefault?[0m ?[34mas?[0m ?[34midentity?[0m,
+        publishedAt ?[34mtimestamp?[0m(6) ?[34mwith?[0m ?[34mtime?[0m zone,
+        validUntil ?[34mtimestamp?[0m(6) ?[34mwith?[0m ?[34mtime?[0m zone,
+        question ?[34mvarchar?[0m(255) ?[34mnot?[0m ?[34mnull?[0m,
+        ?[34mprimary?[0m ?[34mkey?[0m (id)
+    )
+2025-09-22T22:06:43.376+02:00 DEBUG 15340 --- [exercises] [    Test worker] org.hibernate.SQL                        : 
+    ?[34mcreate?[0m ?[34mtable?[0m users (
+        id ?[34mbigint?[0m generated ?[34mby?[0m ?[34mdefault?[0m ?[34mas?[0m ?[34midentity?[0m,
+        email ?[34mvarchar?[0m(255) ?[34mnot?[0m ?[34mnull?[0m ?[34munique?[0m,
+        username ?[34mvarchar?[0m(255) ?[34mnot?[0m ?[34mnull?[0m ?[34munique?[0m,
+        ?[34mprimary?[0m ?[34mkey?[0m (id)
+    )
+?[35m[Hibernate]?[0m 
+    ?[34mcreate?[0m ?[34mtable?[0m users (
+        id ?[34mbigint?[0m generated ?[34mby?[0m ?[34mdefault?[0m ?[34mas?[0m ?[34midentity?[0m,
+        email ?[34mvarchar?[0m(255) ?[34mnot?[0m ?[34mnull?[0m ?[34munique?[0m,
+        username ?[34mvarchar?[0m(255) ?[34mnot?[0m ?[34mnull?[0m ?[34munique?[0m,
+        ?[34mprimary?[0m ?[34mkey?[0m (id)
+    )
+2025-09-22T22:06:43.379+02:00 DEBUG 15340 --- [exercises] [    Test worker] org.hibernate.SQL                        : 
+    ?[34mcreate?[0m ?[34mtable?[0m vote_options (
+        presentationOrder ?[34minteger?[0m ?[34mnot?[0m ?[34mnull?[0m,
+        voteCount ?[34minteger?[0m ?[34mnot?[0m ?[34mnull?[0m,
+        id ?[34mbigint?[0m generated ?[34mby?[0m ?[34mdefault?[0m ?[34mas?[0m ?[34midentity?[0m,
+        poll_id ?[34mbigint?[0m ?[34mnot?[0m ?[34mnull?[0m,
+        caption ?[34mvarchar?[0m(255) ?[34mnot?[0m ?[34mnull?[0m,
+        ?[34mprimary?[0m ?[34mkey?[0m (id)
+    )
+?[35m[Hibernate]?[0m 
+    ?[34mcreate?[0m ?[34mtable?[0m vote_options (
+        presentationOrder ?[34minteger?[0m ?[34mnot?[0m ?[34mnull?[0m,
+        voteCount ?[34minteger?[0m ?[34mnot?[0m ?[34mnull?[0m,
+        id ?[34mbigint?[0m generated ?[34mby?[0m ?[34mdefault?[0m ?[34mas?[0m ?[34midentity?[0m,
+        poll_id ?[34mbigint?[0m ?[34mnot?[0m ?[34mnull?[0m,
+        caption ?[34mvarchar?[0m(255) ?[34mnot?[0m ?[34mnull?[0m,
+        ?[34mprimary?[0m ?[34mkey?[0m (id)
+    )
+2025-09-22T22:06:43.381+02:00 DEBUG 15340 --- [exercises] [    Test worker] org.hibernate.SQL                        : 
+    ?[34mcreate?[0m ?[34mtable?[0m votes (
+        id ?[34mbigint?[0m generated ?[34mby?[0m ?[34mdefault?[0m ?[34mas?[0m ?[34midentity?[0m,
+        option_id ?[34mbigint?[0m ?[34mnot?[0m ?[34mnull?[0m,
+        publishedAt ?[34mtimestamp?[0m(6) ?[34mwith?[0m ?[34mtime?[0m zone ?[34mnot?[0m ?[34mnull?[0m,
+        ?[34mprimary?[0m ?[34mkey?[0m (id)
+    )
+?[35m[Hibernate]?[0m 
+    ?[34mcreate?[0m ?[34mtable?[0m votes (
+        id ?[34mbigint?[0m generated ?[34mby?[0m ?[34mdefault?[0m ?[34mas?[0m ?[34midentity?[0m,
+        option_id ?[34mbigint?[0m ?[34mnot?[0m ?[34mnull?[0m,
+        publishedAt ?[34mtimestamp?[0m(6) ?[34mwith?[0m ?[34mtime?[0m zone ?[34mnot?[0m ?[34mnull?[0m,
+        ?[34mprimary?[0m ?[34mkey?[0m (id)
+    )
+2025-09-22T22:06:43.383+02:00 DEBUG 15340 --- [exercises] [    Test worker] org.hibernate.SQL                        : 
+    ?[34malter?[0m ?[34mtable?[0m ?[34mif?[0m ?[34mexists?[0m polls 
+       ?[34madd?[0m ?[34mconstraint?[0m FKs2iay0nvudl3tl0a33ji0pxyn 
+       ?[34mforeign?[0m ?[34mkey?[0m (created_by) 
+       ?[34mreferences?[0m users
+?[35m[Hibernate]?[0m 
+    ?[34malter?[0m ?[34mtable?[0m ?[34mif?[0m ?[34mexists?[0m polls 
+       ?[34madd?[0m ?[34mconstraint?[0m FKs2iay0nvudl3tl0a33ji0pxyn 
+       ?[34mforeign?[0m ?[34mkey?[0m (created_by) 
+       ?[34mreferences?[0m users
+2025-09-22T22:06:43.385+02:00 DEBUG 15340 --- [exercises] [    Test worker] org.hibernate.SQL                        : 
+    ?[34malter?[0m ?[34mtable?[0m ?[34mif?[0m ?[34mexists?[0m vote_options 
+       ?[34madd?[0m ?[34mconstraint?[0m FK56hcvg8yyift6bfeek4yvi2vt 
+       ?[34mforeign?[0m ?[34mkey?[0m (poll_id) 
+       ?[34mreferences?[0m polls
+?[35m[Hibernate]?[0m 
+    ?[34malter?[0m ?[34mtable?[0m ?[34mif?[0m ?[34mexists?[0m vote_options 
+       ?[34madd?[0m ?[34mconstraint?[0m FK56hcvg8yyift6bfeek4yvi2vt 
+       ?[34mforeign?[0m ?[34mkey?[0m (poll_id) 
+       ?[34mreferences?[0m polls
+2025-09-22T22:06:43.387+02:00 DEBUG 15340 --- [exercises] [    Test worker] org.hibernate.SQL                        : 
+    ?[34malter?[0m ?[34mtable?[0m ?[34mif?[0m ?[34mexists?[0m votes 
+       ?[34madd?[0m ?[34mconstraint?[0m FKce7opojrsdpq1rkbvd4vj2qs5 
+       ?[34mforeign?[0m ?[34mkey?[0m (option_id) 
+       ?[34mreferences?[0m vote_options
+?[35m[Hibernate]?[0m 
+    ?[34malter?[0m ?[34mtable?[0m ?[34mif?[0m ?[34mexists?[0m votes 
+       ?[34madd?[0m ?[34mconstraint?[0m FKce7opojrsdpq1rkbvd4vj2qs5 
+       ?[34mforeign?[0m ?[34mkey?[0m (option_id) 
+       ?[34mreferences?[0m vote_options
+2025-09-22T22:06:43.391+02:00 DEBUG 15340 --- [exercises] [    Test worker] org.hibernate.SQL                        : 
+    ?[34minsert?[0m 
+    ?[34minto?[0m
+        users
+        (email, username, id) 
+    ?[34mvalues?[0m
+        (?, ?, ?[34mdefault?[0m)
+?[35m[Hibernate]?[0m 
+    ?[34minsert?[0m 
+    ?[34minto?[0m
+        users
+        (email, username, id) 
+    ?[34mvalues?[0m
+        (?, ?, ?[34mdefault?[0m)
+2025-09-22T22:06:43.394+02:00 DEBUG 15340 --- [exercises] [    Test worker] org.hibernate.SQL                        : 
+    ?[34minsert?[0m 
+    ?[34minto?[0m
+        users
+        (email, username, id) 
+    ?[34mvalues?[0m
+        (?, ?, ?[34mdefault?[0m)
+?[35m[Hibernate]?[0m 
+    ?[34minsert?[0m 
+    ?[34minto?[0m
+        users
+        (email, username, id) 
+    ?[34mvalues?[0m
+        (?, ?, ?[34mdefault?[0m)
+2025-09-22T22:06:43.396+02:00 DEBUG 15340 --- [exercises] [    Test worker] org.hibernate.SQL                        : 
+    ?[34minsert?[0m 
+    ?[34minto?[0m
+        users
+        (email, username, id) 
+    ?[34mvalues?[0m
+        (?, ?, ?[34mdefault?[0m)
+?[35m[Hibernate]?[0m 
+    ?[34minsert?[0m 
+    ?[34minto?[0m
+        users
+        (email, username, id) 
+    ?[34mvalues?[0m
+        (?, ?, ?[34mdefault?[0m)
+2025-09-22T22:06:43.398+02:00 DEBUG 15340 --- [exercises] [    Test worker] org.hibernate.SQL                        : 
+    ?[34minsert?[0m 
+    ?[34minto?[0m
+        polls
+        (created_by, publishedAt, question, validUntil, id) 
+    ?[34mvalues?[0m
+        (?, ?, ?, ?, ?[34mdefault?[0m)
+?[35m[Hibernate]?[0m 
+    ?[34minsert?[0m 
+    ?[34minto?[0m
+        polls
+        (created_by, publishedAt, question, validUntil, id) 
+    ?[34mvalues?[0m
+        (?, ?, ?, ?, ?[34mdefault?[0m)
+2025-09-22T22:06:43.400+02:00 DEBUG 15340 --- [exercises] [    Test worker] org.hibernate.SQL                        : 
+    ?[34minsert?[0m 
+    ?[34minto?[0m
+        vote_options
+        (caption, poll_id, presentationOrder, voteCount, id) 
+    ?[34mvalues?[0m
+        (?, ?, ?, ?, ?[34mdefault?[0m)
+?[35m[Hibernate]?[0m 
+    ?[34minsert?[0m 
+    ?[34minto?[0m
+        vote_options
+        (caption, poll_id, presentationOrder, voteCount, id) 
+    ?[34mvalues?[0m
+        (?, ?, ?, ?, ?[34mdefault?[0m)
+2025-09-22T22:06:43.402+02:00 DEBUG 15340 --- [exercises] [    Test worker] org.hibernate.SQL                        : 
+    ?[34minsert?[0m 
+    ?[34minto?[0m
+        vote_options
+        (caption, poll_id, presentationOrder, voteCount, id) 
+    ?[34mvalues?[0m
+        (?, ?, ?, ?, ?[34mdefault?[0m)
+?[35m[Hibernate]?[0m 
+    ?[34minsert?[0m 
+    ?[34minto?[0m
+        vote_options
+        (caption, poll_id, presentationOrder, voteCount, id) 
+    ?[34mvalues?[0m
+        (?, ?, ?, ?, ?[34mdefault?[0m)
+2025-09-22T22:06:43.403+02:00 DEBUG 15340 --- [exercises] [    Test worker] org.hibernate.SQL                        : 
+    ?[34minsert?[0m 
+    ?[34minto?[0m
+        polls
+        (created_by, publishedAt, question, validUntil, id) 
+    ?[34mvalues?[0m
+        (?, ?, ?, ?, ?[34mdefault?[0m)
+?[35m[Hibernate]?[0m 
+    ?[34minsert?[0m 
+    ?[34minto?[0m
+        polls
+        (created_by, publishedAt, question, validUntil, id) 
+    ?[34mvalues?[0m
+        (?, ?, ?, ?, ?[34mdefault?[0m)
+2025-09-22T22:06:43.405+02:00 DEBUG 15340 --- [exercises] [    Test worker] org.hibernate.SQL                        : 
+    ?[34minsert?[0m 
+    ?[34minto?[0m
+        vote_options
+        (caption, poll_id, presentationOrder, voteCount, id) 
+    ?[34mvalues?[0m
+        (?, ?, ?, ?, ?[34mdefault?[0m)
+?[35m[Hibernate]?[0m 
+    ?[34minsert?[0m 
+    ?[34minto?[0m
+        vote_options
+        (caption, poll_id, presentationOrder, voteCount, id) 
+    ?[34mvalues?[0m
+        (?, ?, ?, ?, ?[34mdefault?[0m)
+2025-09-22T22:06:43.406+02:00 DEBUG 15340 --- [exercises] [    Test worker] org.hibernate.SQL                        : 
+    ?[34minsert?[0m 
+    ?[34minto?[0m
+        vote_options
+        (caption, poll_id, presentationOrder, voteCount, id) 
+    ?[34mvalues?[0m
+        (?, ?, ?, ?, ?[34mdefault?[0m)
+?[35m[Hibernate]?[0m 
+    ?[34minsert?[0m 
+    ?[34minto?[0m
+        vote_options
+        (caption, poll_id, presentationOrder, voteCount, id) 
+    ?[34mvalues?[0m
+        (?, ?, ?, ?, ?[34mdefault?[0m)
+2025-09-22T22:06:43.407+02:00 DEBUG 15340 --- [exercises] [    Test worker] org.hibernate.SQL                        : 
+    ?[34minsert?[0m 
+    ?[34minto?[0m
+        votes
+        (publishedAt, option_id, id) 
+    ?[34mvalues?[0m
+        (?, ?, ?[34mdefault?[0m)
+?[35m[Hibernate]?[0m 
+    ?[34minsert?[0m 
+    ?[34minto?[0m
+        votes
+        (publishedAt, option_id, id) 
+    ?[34mvalues?[0m
+        (?, ?, ?[34mdefault?[0m)
+2025-09-22T22:06:43.409+02:00 DEBUG 15340 --- [exercises] [    Test worker] org.hibernate.SQL                        : 
+    ?[34minsert?[0m 
+    ?[34minto?[0m
+        votes
+        (publishedAt, option_id, id) 
+    ?[34mvalues?[0m
+        (?, ?, ?[34mdefault?[0m)
+?[35m[Hibernate]?[0m 
+    ?[34minsert?[0m 
+    ?[34minto?[0m
+        votes
+        (publishedAt, option_id, id) 
+    ?[34mvalues?[0m
+        (?, ?, ?[34mdefault?[0m)
+2025-09-22T22:06:43.410+02:00 DEBUG 15340 --- [exercises] [    Test worker] org.hibernate.SQL                        : 
+    ?[34minsert?[0m 
+    ?[34minto?[0m
+        votes
+        (publishedAt, option_id, id) 
+    ?[34mvalues?[0m
+        (?, ?, ?[34mdefault?[0m)
+?[35m[Hibernate]?[0m 
+    ?[34minsert?[0m 
+    ?[34minto?[0m
+        votes
+        (publishedAt, option_id, id) 
+    ?[34mvalues?[0m
+        (?, ?, ?[34mdefault?[0m)
+2025-09-22T22:06:43.412+02:00 DEBUG 15340 --- [exercises] [    Test worker] org.hibernate.SQL                        : 
+    ?[34minsert?[0m 
+    ?[34minto?[0m
+        votes
+        (publishedAt, option_id, id) 
+    ?[34mvalues?[0m
+        (?, ?, ?[34mdefault?[0m)
+?[35m[Hibernate]?[0m 
+    ?[34minsert?[0m 
+    ?[34minto?[0m
+        votes
+        (publishedAt, option_id, id) 
+    ?[34mvalues?[0m
+        (?, ?, ?[34mdefault?[0m)
+2025-09-22T22:06:43.524+02:00 DEBUG 15340 --- [exercises] [    Test worker] org.hibernate.SQL                        : 
+    ?[34mselect?[0m
+        count(v1_0.id) 
+    ?[34mfrom?[0m
+        votes v1_0 
+    ?[34mjoin?[0m
+        vote_options vo1_0 
+            ?[34mon?[0m vo1_0.id=v1_0.option_id 
+    ?[34mjoin?[0m
+        polls p1_0 
+            ?[34mon?[0m p1_0.id=vo1_0.poll_id 
+    ?[34mjoin?[0m
+        users cb1_0 
+            ?[34mon?[0m cb1_0.id=p1_0.created_by 
+    ?[34mwhere?[0m
+        cb1_0.email=? 
+        ?[34mand?[0m vo1_0.presentationOrder=?
+?[35m[Hibernate]?[0m 
+    ?[34mselect?[0m
+        count(v1_0.id) 
+    ?[34mfrom?[0m
+        votes v1_0 
+    ?[34mjoin?[0m
+        vote_options vo1_0 
+            ?[34mon?[0m vo1_0.id=v1_0.option_id 
+    ?[34mjoin?[0m
+        polls p1_0 
+            ?[34mon?[0m p1_0.id=vo1_0.poll_id 
+    ?[34mjoin?[0m
+        users cb1_0 
+            ?[34mon?[0m cb1_0.id=p1_0.created_by 
+    ?[34mwhere?[0m
+        cb1_0.email=? 
+        ?[34mand?[0m vo1_0.presentationOrder=?
+2025-09-22T22:06:43.535+02:00 DEBUG 15340 --- [exercises] [    Test worker] org.hibernate.SQL                        : 
+    ?[34mselect?[0m
+        count(v1_0.id) 
+    ?[34mfrom?[0m
+        votes v1_0 
+    ?[34mjoin?[0m
+        vote_options vo1_0 
+            ?[34mon?[0m vo1_0.id=v1_0.option_id 
+    ?[34mjoin?[0m
+        polls p1_0 
+            ?[34mon?[0m p1_0.id=vo1_0.poll_id 
+    ?[34mjoin?[0m
+        users cb1_0 
+            ?[34mon?[0m cb1_0.id=p1_0.created_by 
+    ?[34mwhere?[0m
+        cb1_0.email=? 
+        ?[34mand?[0m vo1_0.presentationOrder=?
+?[35m[Hibernate]?[0m 
+    ?[34mselect?[0m
+        count(v1_0.id) 
+    ?[34mfrom?[0m
+        votes v1_0 
+    ?[34mjoin?[0m
+        vote_options vo1_0 
+            ?[34mon?[0m vo1_0.id=v1_0.option_id 
+    ?[34mjoin?[0m
+        polls p1_0 
+            ?[34mon?[0m p1_0.id=vo1_0.poll_id 
+    ?[34mjoin?[0m
+        users cb1_0 
+            ?[34mon?[0m cb1_0.id=p1_0.created_by 
+    ?[34mwhere?[0m
+        cb1_0.email=? 
+        ?[34mand?[0m vo1_0.presentationOrder=?
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="https://www.gradle.org">Gradle 8.14.3</a> at 22 Sept 2025, 22:06:44</p>
+</div>
+</div>
+</body>
+</html>

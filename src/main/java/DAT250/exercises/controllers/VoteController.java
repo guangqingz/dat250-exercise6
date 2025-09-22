@@ -5,7 +5,7 @@ import org.springframework.web.bind.annotation.*;
 import org.springframework.web.server.ResponseStatusException;
 
 import DAT250.exercises.PollManager;
-import DAT250.exercises.Vote;
+import DAT250.exercises.jpa.polls.Vote;
 
 import java.util.*;
 

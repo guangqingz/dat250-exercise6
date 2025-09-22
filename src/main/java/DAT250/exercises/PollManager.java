@@ -5,6 +5,10 @@ import java.util.Map;
 
 import org.springframework.stereotype.Component;
 
+import DAT250.exercises.jpa.polls.Poll;
+import DAT250.exercises.jpa.polls.User;
+import DAT250.exercises.jpa.polls.Vote;
+
 @Component
 public class PollManager {
     private final Map<String, User> users = new HashMap<>();

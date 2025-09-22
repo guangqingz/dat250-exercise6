@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="DAT250.exercises.VoteControllerTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2025-09-22T20:06:39.306Z" hostname="DESKTOP-VMCCLI4" time="0.189">
+  <properties/>
+  <testcase name="testUpdateVote()" classname="DAT250.exercises.VoteControllerTest" time="0.067"/>
+  <testcase name="testGetVote()" classname="DAT250.exercises.VoteControllerTest" time="0.049"/>
+  <testcase name="testDeleteVote()" classname="DAT250.exercises.VoteControllerTest" time="0.07"/>
+  <system-out><![CDATA[2025-09-22T22:06:39.295+02:00  INFO 15340 --- [exercises] [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [DAT250.exercises.VoteControllerTest]: VoteControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2025-09-22T22:06:39.298+02:00  INFO 15340 --- [exercises] [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration DAT250.exercises.ExercisesApplication for test class DAT250.exercises.VoteControllerTest
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

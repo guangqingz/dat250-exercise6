@@ -14,6 +14,9 @@ import org.springframework.boot.test.web.server.LocalServerPort;
 import org.springframework.web.client.RestClientResponseException;
 import org.springframework.web.client.RestTemplate;
 
+import DAT250.exercises.jpa.polls.Poll;
+import DAT250.exercises.jpa.polls.VoteOption;
+
 @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
 public class PollControllerTest {
 
