@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">0.711s</div>
+<div class="counter">6.168s</div>
 <p>duration</p>
 </div>
 </td>
@@ -79,17 +79,17 @@
 </thead>
 <tr>
 <td class="success">testDeletePoll()</td>
-<td class="success">0.103s</td>
+<td class="success">0.633s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">testGetPoll()</td>
-<td class="success">0.047s</td>
+<td class="success">0.076s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">testUpdatePoll()</td>
-<td class="success">0.561s</td>
+<td class="success">5.459s</td>
 <td class="success">passed</td>
 </tr>
 </table>
@@ -97,8 +97,8 @@
 <div class="tab">
 <h2>Standard output</h2>
 <span class="code">
-<pre>2025-09-22T22:06:37.161+02:00  INFO 15340 --- [exercises] [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [DAT250.exercises.PollControllerTest]: PollControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-2025-09-22T22:06:37.166+02:00  INFO 15340 --- [exercises] [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration DAT250.exercises.ExercisesApplication for test class DAT250.exercises.PollControllerTest
+<pre>2025-10-06T23:44:45.564+02:00  INFO 1328 --- [exercises] [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [DAT250.exercises.PollControllerTest]: PollControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2025-10-06T23:44:45.592+02:00  INFO 1328 --- [exercises] [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration DAT250.exercises.ExercisesApplication for test class DAT250.exercises.PollControllerTest
 
   .   ____          _            __ _ _
  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
@@ -109,18 +109,61 @@
 
  :: Spring Boot ::                (v3.5.5)
 
-2025-09-22T22:06:37.224+02:00  INFO 15340 --- [exercises] [    Test worker] DAT250.exercises.PollControllerTest      : Starting PollControllerTest using Java 21.0.7 with PID 15340 (started by GQ in C:\Users\GQ\Documents\HVL\DAT250\exercise4)
-2025-09-22T22:06:37.225+02:00  INFO 15340 --- [exercises] [    Test worker] DAT250.exercises.PollControllerTest      : No active profile set, falling back to 1 default profile: &quot;default&quot;
-2025-09-22T22:06:37.801+02:00  INFO 15340 --- [exercises] [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 0 (http)
-2025-09-22T22:06:37.826+02:00  INFO 15340 --- [exercises] [    Test worker] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2025-09-22T22:06:37.827+02:00  INFO 15340 --- [exercises] [    Test worker] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.44]
-2025-09-22T22:06:37.935+02:00  INFO 15340 --- [exercises] [    Test worker] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2025-09-22T22:06:37.937+02:00  INFO 15340 --- [exercises] [    Test worker] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 706 ms
-2025-09-22T22:06:38.434+02:00  INFO 15340 --- [exercises] [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 63055 (http) with context path '/'
-2025-09-22T22:06:38.438+02:00  INFO 15340 --- [exercises] [    Test worker] DAT250.exercises.PollControllerTest      : Started PollControllerTest in 1.265 seconds (process running for 7.074)
-2025-09-22T22:06:38.768+02:00  INFO 15340 --- [exercises] [0-auto-1-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-09-22T22:06:38.768+02:00  INFO 15340 --- [exercises] [0-auto-1-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2025-09-22T22:06:38.769+02:00  INFO 15340 --- [exercises] [0-auto-1-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-10-06T23:44:46.234+02:00  WARN 1328 --- [exercises] [    Test worker] ory$DuplicateJsonObjectContextCustomizer : 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/home/guangqingz/.gradle/caches/modules-2/files-2.1/org.json/json/20250517/d67181bbd819ccceb929b580a4e2fcb0c8b17cd8/json-20250517.jar!/org/json/JSONObject.class
+	jar:file:/home/guangqingz/.gradle/caches/modules-2/files-2.1/com.vaadin.external.google/android-json/0.0.20131108.vaadin1/fa26d351fe62a6a17f5cda1287c1c6110dec413f/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+2025-10-06T23:44:46.251+02:00  INFO 1328 --- [exercises] [    Test worker] DAT250.exercises.PollControllerTest      : Starting PollControllerTest using Java 21.0.3 with PID 1328 (started by guangqingz in /mnt/c/Users/GQ/Documents/HVL/DAT250/exercise5/dat250-exercise5)
+2025-10-06T23:44:46.252+02:00  INFO 1328 --- [exercises] [    Test worker] DAT250.exercises.PollControllerTest      : No active profile set, falling back to 1 default profile: &quot;default&quot;
+2025-10-06T23:44:51.276+02:00  INFO 1328 --- [exercises] [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-10-06T23:44:51.838+02:00  INFO 1328 --- [exercises] [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 548 ms. Found 1 JPA repository interface.
+2025-10-06T23:44:54.731+02:00  INFO 1328 --- [exercises] [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 0 (http)
+2025-10-06T23:44:54.977+02:00  INFO 1328 --- [exercises] [    Test worker] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-10-06T23:44:54.978+02:00  INFO 1328 --- [exercises] [    Test worker] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.44]
+2025-10-06T23:44:56.057+02:00  INFO 1328 --- [exercises] [    Test worker] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-10-06T23:44:56.068+02:00  INFO 1328 --- [exercises] [    Test worker] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 9765 ms
+2025-10-06T23:44:57.965+02:00  INFO 1328 --- [exercises] [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2025-10-06T23:44:57.973+02:00  INFO 1328 --- [exercises] [    Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection conn10: url=jdbc:h2:mem:c146b342-25ec-4add-99ec-9170884a556b user=SA
+2025-10-06T23:44:57.976+02:00  INFO 1328 --- [exercises] [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2025-10-06T23:44:58.020+02:00  INFO 1328 --- [exercises] [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-10-06T23:44:59.448+02:00  INFO 1328 --- [exercises] [    Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-10-06T23:44:59.539+02:00  INFO 1328 --- [exercises] [    Test worker] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:h2:mem:c146b342-25ec-4add-99ec-9170884a556b]
+	Database driver: H2 JDBC Driver
+	Database dialect: H2Dialect
+	Database version: 2.3.232
+	Default catalog/schema: C146B342-25EC-4ADD-99EC-9170884A556B/PUBLIC
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: 100
+	Pool: DatasourceConnectionProviderImpl
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-10-06T23:45:01.109+02:00  INFO 1328 --- [exercises] [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-10-06T23:45:01.199+02:00 DEBUG 1328 --- [exercises] [    Test worker] org.hibernate.SQL                        : drop table if exists polls cascade 
+2025-10-06T23:45:01.200+02:00 DEBUG 1328 --- [exercises] [    Test worker] org.hibernate.SQL                        : drop table if exists users cascade 
+2025-10-06T23:45:01.201+02:00 DEBUG 1328 --- [exercises] [    Test worker] org.hibernate.SQL                        : drop table if exists vote_options cascade 
+2025-10-06T23:45:01.202+02:00 DEBUG 1328 --- [exercises] [    Test worker] org.hibernate.SQL                        : drop table if exists votes cascade 
+2025-10-06T23:45:01.204+02:00 DEBUG 1328 --- [exercises] [    Test worker] org.hibernate.SQL                        : create table polls (created_by bigint not null, id bigint generated by default as identity, published_at timestamp(6) with time zone, valid_until timestamp(6) with time zone, question varchar(255) not null, primary key (id))
+2025-10-06T23:45:01.210+02:00 DEBUG 1328 --- [exercises] [    Test worker] org.hibernate.SQL                        : create table users (id bigint generated by default as identity, email varchar(255) not null unique, username varchar(255) not null unique, primary key (id))
+2025-10-06T23:45:01.216+02:00 DEBUG 1328 --- [exercises] [    Test worker] org.hibernate.SQL                        : create table vote_options (presentation_order integer not null, vote_count integer not null, id bigint generated by default as identity, poll_id bigint not null, caption varchar(255) not null, primary key (id))
+2025-10-06T23:45:01.220+02:00 DEBUG 1328 --- [exercises] [    Test worker] org.hibernate.SQL                        : create table votes (id bigint generated by default as identity, option_id bigint not null, published_at timestamp(6) with time zone not null, primary key (id))
+2025-10-06T23:45:01.227+02:00 DEBUG 1328 --- [exercises] [    Test worker] org.hibernate.SQL                        : alter table if exists polls add constraint FKs2iay0nvudl3tl0a33ji0pxyn foreign key (created_by) references users
+2025-10-06T23:45:01.236+02:00 DEBUG 1328 --- [exercises] [    Test worker] org.hibernate.SQL                        : alter table if exists vote_options add constraint FK56hcvg8yyift6bfeek4yvi2vt foreign key (poll_id) references polls
+2025-10-06T23:45:01.240+02:00 DEBUG 1328 --- [exercises] [    Test worker] org.hibernate.SQL                        : alter table if exists votes add constraint FKce7opojrsdpq1rkbvd4vj2qs5 foreign key (option_id) references vote_options
+2025-10-06T23:45:01.297+02:00  INFO 1328 --- [exercises] [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+Connected to Redis: PONG
+2025-10-06T23:45:01.597+02:00  WARN 1328 --- [exercises] [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-10-06T23:45:04.278+02:00  INFO 1328 --- [exercises] [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 40043 (http) with context path '/'
+2025-10-06T23:45:04.285+02:00  INFO 1328 --- [exercises] [    Test worker] DAT250.exercises.PollControllerTest      : Started PollControllerTest in 18.653 seconds (process running for 154.059)
+2025-10-06T23:45:07.469+02:00  INFO 1328 --- [exercises] [0-auto-1-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-10-06T23:45:07.470+02:00  INFO 1328 --- [exercises] [0-auto-1-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-10-06T23:45:07.473+02:00  INFO 1328 --- [exercises] [0-auto-1-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
 </pre>
 </span>
 </div>
@@ -132,7 +175,7 @@
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="https://www.gradle.org">Gradle 8.14.3</a> at 22 Sept 2025, 22:06:44</p>
+<a href="https://www.gradle.org">Gradle 8.14.3</a> at Oct 6, 2025, 11:45:22 PM</p>
 </div>
 </div>
 </body>
