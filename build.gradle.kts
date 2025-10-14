@@ -27,6 +27,8 @@ dependencies {
     implementation("com.h2database:h2:2.3.232")
 	implementation("jakarta.persistence:jakarta.persistence-api:3.2.0")
 	implementation("redis.clients:jedis:6.2.0")
+	implementation("org.springframework.boot:spring-boot-starter-amqp")
+    implementation("com.fasterxml.jackson.core:jackson-databind")
 }
 
 tasks.withType<Test> {
