@@ -20,15 +20,18 @@ import DAT250.exercises.PollManager;
 import DAT250.exercises.jpa.polls.Poll;
 import DAT250.exercises.jpa.polls.Vote;
 import DAT250.exercises.jpa.polls.VoteOption;
+import DAT250.exercises.rabbitmq.PollEventService;
 
 @CrossOrigin
 @RestController
 @RequestMapping("/polls")
 public class PollController {
     private final PollManager pollManager;
+    private final PollEventService pollEventService;
 
-    public PollController(PollManager pollManager) {
+    public PollController(PollManager pollManager, PollEventService pollEventService) {
         this.pollManager = pollManager;
+        this.pollEventService = pollEventService;
     }
 
     @GetMapping
@@ -62,6 +65,7 @@ public class PollController {
     public String createPoll(@RequestBody Poll poll) {
         String pollId = UUID.randomUUID().toString();
         pollManager.addPoll(pollId, poll);
+        pollEventService.registerPollTopic(pollId);
         return pollId;
     }
 

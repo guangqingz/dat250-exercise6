@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="DAT250.exercises.UserControllerTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2025-10-06T21:45:10.553Z" hostname="DESKTOP-VMCCLI4" time="0.221">
+<testsuite name="DAT250.exercises.UserControllerTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2025-10-08T12:57:41.253Z" hostname="DESKTOP-VMCCLI4" time="0.199">
   <properties/>
-  <testcase name="testUpdateUser()" classname="DAT250.exercises.UserControllerTest" time="0.066"/>
-  <testcase name="testGetUser()" classname="DAT250.exercises.UserControllerTest" time="0.063"/>
-  <testcase name="testDeleteUser()" classname="DAT250.exercises.UserControllerTest" time="0.086"/>
-  <system-out><![CDATA[2025-10-06T23:45:10.498+02:00  INFO 1328 --- [exercises] [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [DAT250.exercises.UserControllerTest]: UserControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-2025-10-06T23:45:10.526+02:00  INFO 1328 --- [exercises] [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration DAT250.exercises.ExercisesApplication for test class DAT250.exercises.UserControllerTest
+  <testcase name="testUpdateUser()" classname="DAT250.exercises.UserControllerTest" time="0.076"/>
+  <testcase name="testGetUser()" classname="DAT250.exercises.UserControllerTest" time="0.05"/>
+  <testcase name="testDeleteUser()" classname="DAT250.exercises.UserControllerTest" time="0.065"/>
+  <system-out><![CDATA[2025-10-08T14:57:41.239+02:00  INFO 25720 --- [exercises] [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [DAT250.exercises.UserControllerTest]: UserControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2025-10-08T14:57:41.246+02:00  INFO 25720 --- [exercises] [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration DAT250.exercises.ExercisesApplication for test class DAT250.exercises.UserControllerTest
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

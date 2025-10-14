@@ -15,9 +15,12 @@ public class PollCache {
         System.out.println("Connected to Redis: " + jedis.ping());
     }
 
-    public Map<String, Integer> getPollVotes(long pollId) {
-        String key = "poll:" + pollId;
-        Map<String, String> result = jedis.hgetAll(key);
+    private String key(String pollId) {
+        return "poll:" + pollId;
+    }
+
+    public Map<String, Integer> getPollVotes(String pollId) {
+        Map<String, String> result = jedis.hgetAll(key(pollId));
         Map<String, Integer> converted = new HashMap<>();
 
         for (Map.Entry<String, String> entry : result.entrySet()) {
@@ -27,27 +30,24 @@ public class PollCache {
         return converted;
     }
 
-    public void cachePollVotes(long pollId, Map<String, Integer> votes) {
+    public void cachePollVotes(String pollId, Map<String, Integer> votes) {
         if (votes == null || votes.isEmpty()) return;
 
-        String key = "poll:" + pollId;
         Map<String, String> toStore = new HashMap<>();
         for (Map.Entry<String, Integer> entry : votes.entrySet()) {
             toStore.put(entry.getKey(), entry.getValue().toString());
         }
 
-        jedis.hset(key, toStore);
-        jedis.expire(key, CACHE_TTL_SECONDS);
+        jedis.hset(key(pollId), toStore);
+        jedis.expire(key(pollId), CACHE_TTL_SECONDS);
     }
 
-    public void incrementVote(long pollId, String optionId) {
-        String key = "poll:" + pollId;
-        jedis.hincrBy(key, optionId, 1);
+    public void incrementVote(String pollId, String optionId) {
+        jedis.hincrBy(key(pollId), optionId, 1);
     }
 
-    public void invalidatePoll(long pollId) {
-        String key = "poll:" + pollId;
-        jedis.del(key);
+    public void invalidatePoll(String pollId) {
+        jedis.del(key(pollId));
     }
 
     public void close() {

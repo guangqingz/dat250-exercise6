@@ -4,7 +4,18 @@ import java.time.Instant;
 import java.util.ArrayList;
 import java.util.List;
 
-import jakarta.persistence.*;
+import jakarta.persistence.CascadeType;
+import jakarta.persistence.Column;
+import jakarta.persistence.Entity;
+import jakarta.persistence.FetchType;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+import jakarta.persistence.JoinColumn;
+import jakarta.persistence.ManyToOne;
+import jakarta.persistence.OneToMany;
+import jakarta.persistence.OrderBy;
+import jakarta.persistence.Table;
 
 @Entity
 @Table(name = "polls")
@@ -70,15 +81,6 @@ public class Poll {
         this.createdBy = createdBy;
     }
 
-    /**
-     *
-     * Adds a new option to this Poll and returns the respective
-     * VoteOption object with the given caption.
-     * The value of the presentationOrder field gets determined
-     * by the size of the currently existing VoteOptions for this Poll.
-     * I.e. the first added VoteOption has presentationOrder=0, the secondly
-     * registered VoteOption has presentationOrder=1 and so on.
-     */
     public VoteOption addVoteOption(String caption) {
         VoteOption option = new VoteOption();
         option.setCaption(caption);

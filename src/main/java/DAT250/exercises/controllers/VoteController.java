@@ -6,6 +6,7 @@ import org.springframework.web.server.ResponseStatusException;
 
 import DAT250.exercises.PollManager;
 import DAT250.exercises.jpa.polls.Vote;
+import DAT250.exercises.rabbitmq.PollEventService;
 
 import java.util.*;
 
@@ -15,21 +16,27 @@ import java.util.*;
 public class VoteController {
 
     private final PollManager pollManager;
+    private final PollEventService pollEventService;
 
-    public VoteController(PollManager pollManager) {
+    public VoteController(PollManager pollManager, PollEventService pollEventService) {
         this.pollManager = pollManager;
+        this.pollEventService = pollEventService;
     }
 
     @PostMapping("/{pollId}/{username}")
-    public void addVote(@PathVariable String pollId, @PathVariable String username,
-                         @RequestBody Vote vote) {
+    public void addVote(@PathVariable String pollId, @PathVariable String username, 
+                        @RequestBody Vote vote) {
 
         pollManager.addVote(pollId, vote, username);
+        pollEventService.publishVoteEvent(
+                pollId, 
+                String.valueOf(vote.getVotesOn().getPresentationOrder()), 
+                username);
     }
 
     @PutMapping("/{pollId}/{username}")
-    public void updateVote(@PathVariable String pollId, @PathVariable String username,
-                           @RequestBody Vote vote) {
+    public void updateVote(@PathVariable String pollId, @PathVariable String username, 
+                            @RequestBody Vote vote) {
 
         pollManager.updateVote(pollId, vote, username);
     }

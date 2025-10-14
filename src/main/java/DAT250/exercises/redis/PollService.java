@@ -19,7 +19,7 @@ public class PollService {
     }
 
     @Transactional(readOnly = true)
-    public Map<String, Integer> getPollResults(long pollId) {
+    public Map<String, Integer> getPollResults(String pollId) {
         Map<String, Integer> cached = cache.getPollVotes(pollId);
         if (!cached.isEmpty()) {
             System.out.println("Returning from Redis cache");
@@ -27,12 +27,16 @@ public class PollService {
         }
 
         // Cache miss — querying H2 database
-        List<Vote> votes = voteRepository.findByPollId(pollId);
         Map<String, Integer> result = new HashMap<>();
-
-        for (Vote vote : votes) {
-            String optionId = String.valueOf(vote.getVotesOn().getPresentationOrder());
-            result.put(optionId, result.getOrDefault(optionId, 0) + 1);
+        try {
+            Long numericId = Long.parseLong(pollId);
+            List<Vote> votes = voteRepository.findByPollId(numericId);
+            for (Vote vote : votes) {
+                String optionId = String.valueOf(vote.getVotesOn().getPresentationOrder());
+                result.put(optionId, result.getOrDefault(optionId, 0) + 1);
+            }
+        } catch (NumberFormatException e) {
+            System.out.println("Poll ID is not numeric; skipping DB lookup.");
         }
 
         cache.cachePollVotes(pollId, result);
@@ -40,12 +44,12 @@ public class PollService {
     }
 
     @Transactional
-    public void registerVote(long pollId, String optionId) {
+    public void registerVote(String pollId, String optionId) {
         cache.incrementVote(pollId, optionId);
         System.out.println("Incremented Redis cache for poll " + pollId + ", option " + optionId);
     }
 
-    public void invalidateCache(long pollId) {
+    public void invalidateCache(String pollId) {
         cache.invalidatePoll(pollId);
         System.out.println("Cache invalidated for poll " + pollId);
     }
